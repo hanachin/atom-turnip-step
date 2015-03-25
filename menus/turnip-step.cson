@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable turnip-step': 'turnip-step:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'turnip-step'
+      'submenu': [
+        { 'label': 'Jump to step', 'command': 'turnip-step:jump-to-step' }
+      ]
+    ]
+  }
+]

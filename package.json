@@ -1,0 +1,43 @@
+{
+  "name": "champierre-turnip-step",
+  "main": "./lib/turnip-step",
+  "version": "0.0.0",
+  "description": "Jump to step from feature",
+  "activationEvents": [
+    "turnip-step:jump-to-step"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/champierre/atom-turnip-step"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# atom-step package\n\nWhen in a feature file this will jump to the step definition for the current line.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/champierre/atom-turnip-step/issues"
+  },
+  "homepage": "https://github.com/champierre/atom-turnip-step",
+  "_id": "turnip-step@0.2.0",
+  "_shasum": "90331a20aabbd088fbeecd73182ef5c5e97fdb18",
+  "_resolved": "file:../d-115225-59081-1f87g1y/package.tgz",
+  "_from": "../d-115225-59081-1f87g1y/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/atom-step-view.coffee",
+        "lib/atom-step.coffee",
+        "lib/step-jumper.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
