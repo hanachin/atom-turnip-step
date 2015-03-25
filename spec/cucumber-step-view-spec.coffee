@@ -1,4 +1,4 @@
-CucumberStepView = require '../lib/turnip-step-view'
+TurnipStepView = require '../lib/turnip-step-view'
 {WorkspaceView} = require 'atom'
 
 describe "TurnipStepView", ->

@@ -1,7 +1,7 @@
 StepJumper = require './step-jumper'
 
 module.exports =
-  cucumberStepView: null
+  turnipStepView: null
 
   activate: (state) ->
     atom.workspaceView.command "turnip-step:jump-to-step", =>
