@@ -20,4 +20,4 @@ module.exports =
             return [filePath, match.range[0][0]]
 
     compileRegExp: (expression) ->
-      new RegExp(stepExpression)
+      new RegExp(expression)
