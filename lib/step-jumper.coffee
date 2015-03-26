@@ -1,5 +1,6 @@
 module.exports =
   class StepJumper
+    @PLACEHOLDER_REGEXP: /:[\w]+/g
 
     constructor: (@line) ->
       matchData = @line.match(/^\s*(.+)\s+(.*)/)
@@ -20,4 +21,13 @@ module.exports =
             return [filePath, match.range[0][0]]
 
     compileRegExp: (expression) ->
-      new RegExp(expression)
+      exp = expression.replace(StepJumper.PLACEHOLDER_REGEXP, @resolvePlaceHolder)
+      new RegExp(exp)
+
+    resolvePlaceHolder: (placeHolderName) =>
+      @defaultPlaceHolder
+
+    defaultPlaceHolder:
+      """
+      (?:"([^"]*)"|'([^']*)'|([[:alnum:]_-]+))
+      """
