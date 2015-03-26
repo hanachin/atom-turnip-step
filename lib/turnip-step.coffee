@@ -7,7 +7,7 @@ module.exports =
     atom.workspaceView.command "turnip-step:jump-to-step", =>
       currentLine = atom.workspace.getActiveEditor().getCursor().getCurrentBufferLine()
       stepJumper = new StepJumper(currentLine)
-      return unless stepJumper.firstWord
+      return unless stepJumper.prepositionOrAdverb
       options =
         paths: ["spec/steps/**/*.rb"]
 

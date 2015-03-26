@@ -4,7 +4,7 @@ module.exports =
     constructor: (@line) ->
       matchData = @line.match(/^\s*(.+)\s+(.*)/)
       if matchData
-        @firstWord = matchData[1]
+        @prepositionOrAdverb = matchData[1]
         @restOfLine = matchData[2]
 
     stepTypeRegex: ->
