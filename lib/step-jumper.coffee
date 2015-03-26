@@ -15,5 +15,9 @@ module.exports =
         console.log("Searching in #{filePath}")
         if regexMatches = match.matchText.match(/^step\s+'(.*)'/)
           stepExpression = regexMatches[1]
-          if @restOfLine.match(new RegExp(stepExpression))
+          stepRegExp = @compileRegExp(stepExpression)
+          if @restOfLine.match(stepRegExp)
             return [filePath, match.range[0][0]]
+
+    compileRegExp: (expression) ->
+      new RegExp(stepExpression)
