@@ -1,5 +1,5 @@
 {
-  "name": "champierre-turnip-step",
+  "name": "turnip-step",
   "main": "./lib/turnip-step",
   "version": "0.1.0",
   "description": "Jump to step from feature",
